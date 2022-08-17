@@ -22,7 +22,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/yasserpulido/qr-code)
+- Solution URL: [GitHub](https://github.com/yasserpulido/product-card-component)
 
 ### Built with
 
