@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  background-color: #f3eae3;
+  font-family: "Montserrat", sans-serif;
+  color: #777783;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card--information {
+  background-color: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+.perfume-title {
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: #1e2327;
+  line-height: 1;
+  margin: 0.8rem 0;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.new--price {
+  font-size: 2rem;
+  color: #418169;
+  font-family: "Fraunces", serif;
+  margin-right: 0.8rem;
+}
+
+.old--price {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+.card--icon {
+  width: 8%;
+  margin-right: 0.5rem;
+}
+
+.btn {
+  background-color: #777783;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  width: 100%;
+  font-weight: bold;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn:hover {
+  background-color: #1e2327;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: auto;
+  height: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .product-mobile {
+    display: block;
+  }
+
+  .product-desktop {
+    display: none;
+  }
+
+  .card--information {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .card--information {
+    padding: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .product-mobile {
+    display: none;
+  }
+
+  .product-desktop {
+    display: block;
+  }
+
+  .card {
+    display: flex;
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .card--image,
+  .card--information {
+    width: 50%;
+  }
+
+  .card--information {
+    display: flex;
+    flex-direction: column;
+    padding: 2.8rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}
